@@ -8,6 +8,9 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+/** This is Music class which defines the track object with trackId, trackName
+ * and trackComment
+ */
 @Entity
 @Data
 @NoArgsConstructor
@@ -16,8 +19,8 @@ import javax.persistence.Id;
 public class Music {
 
     @Id
-    int trackId;
-    String trackName;
-    String trackComment;
+    private int trackId; //here track id is unique the primary key
+    private String trackName;
+    private String trackComment;
 
 }
